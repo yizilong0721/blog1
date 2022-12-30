@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: '子龙博客'
+title: '枝丫博客'
 subtitle: '无忧无虑'
 description: '粗茶淡饭 招呼不周 请多见谅'
 keywords: 博客
-author: 子龙
+author: 枝丫
 language: zh-CN
 timezone: ''
 
@@ -151,20 +151,14 @@ envelope_comment:
 # electric_clock
 # see https://akilar.top/posts/4e39cf4a/
 electric_clock:
-  enable: false # 开关
-  priority: 5 #过滤器优先权
-  enable_page: all # 应用页面
-  exclude:
-  # - /posts/
-  # - /about/
-  layout: # 挂载容器类型
+  priority: 5
+  enable: false
+  enable_page: all
+  layout:
     type: class
     name: sticky_layout
     index: 0
-  loading: https://npm.elemecdn.com/hexo-butterfly-clock/lib/loading.gif #加载动画自定义
-  clock_css: https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.css
-  clock_js: https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.js
-  ip_api: https://pv.sohu.com/cityjson?ie=utf-8
+  temple_html: '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>'
 
 swiper:
   enable: true
@@ -179,7 +173,7 @@ swiper:
 
 
 butterfly_article_double_row:
-  enable: true
+  enable: false
 
 magnet:
   enable: false
@@ -233,6 +227,7 @@ tag_plugins:
     iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
     carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
     tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
